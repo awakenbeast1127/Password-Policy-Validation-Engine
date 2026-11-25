@@ -1,0 +1,18 @@
+PASSWORD POLICY VALIDATION
+------------------------------------------------
+Password: Niat@2026
+Result: VALID
+
+Password: abc123
+Result: INVALID
+  - Must contain at least 8 characters.
+  - Must contain an uppercase letter.
+  - Must contain a special character.
+
+Password: PasswoRD123!
+Result: INVALID
+  - Must not contain the prohibited word 'password'.
+
+Password: Aa1111!xy
+Result: INVALID
+  - Must not contain 3 identical consecutive characters.
